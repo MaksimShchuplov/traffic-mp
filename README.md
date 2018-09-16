@@ -1,4 +1,4 @@
 # traffic-mp
-realtime multithread iperf checker
+realtime multithread traffic checker (use iperf3 on both sides)
 
 TBD
