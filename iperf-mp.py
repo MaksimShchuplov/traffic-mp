@@ -2,7 +2,6 @@
 
 import ConfigParser as configparser
 import Queue as queue
-# import commands
 import smtplib
 import threading
 import time
@@ -328,11 +327,13 @@ def main_programm():
         time.sleep(0.001)
 
 
-result_queue = queue.Queue()
-operational_queue = queue.Queue()
-zabbix_queue = queue.Queue()
-global_mail_timer_hash = {}
-global_error_mail_timer_hash = {}
 
-main_programm()
+if __name__ == "__main__":
 
+    result_queue = queue.Queue()
+    operational_queue = queue.Queue()
+    zabbix_queue = queue.Queue()
+    global_mail_timer_hash = {}
+    global_error_mail_timer_hash = {}
+
+    main_programm()
