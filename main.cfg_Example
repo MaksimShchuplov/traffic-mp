@@ -1,0 +1,58 @@
+
+[from GV2 to FRA8]
+reverse = no
+min_bandwidth = 15
+address = 213.200.110.110
+bandwidth = 50
+mail = info@smartcgi.com
+errormail = vitali4@smartcgi.com,max@smartcgi.com
+port = default
+wait_between_reconnect = 0.1
+prefix =
+
+[from GV2 to LD5]
+reverse = no
+min_bandwidth = 15
+address = 198.179.30.82
+bandwidth = 50
+mail = info@smartcgi.com
+errormail = vitali4@smartcgi.com,max@smartcgi.com
+port = default
+wait_between_reconnect = 0.1
+prefix =
+
+[from GV2 to GR]
+reverse = no
+min_bandwidth = 2
+address = 31.177.62.77
+bandwidth = 50
+mail = info@smartcgi.com
+errormail = vitali4@smartcgi.com,max@smartcgi.com
+#mail = max@smartcgi.com
+port = default
+wait_between_reconnect = 0.3
+prefix =
+
+
+[from GV2 to MAD2-cogent]
+reverse = no
+min_bandwidth = 15
+address = 130.117.88.234
+bandwidth = 50
+mail = info@smartcgi.com
+errormail = vitali4@smartcgi.com
+port = default
+wait_between_reconnect = 0.1
+prefix =
+
+[from GV2 to LA2]
+reverse = no
+min_bandwidth = 15
+address = 198.179.31.32
+bandwidth = 50
+mail = info@smartcgi.com
+errormail = vitali4@smartcgi.com
+port = default
+wait_between_reconnect = 0.3
+prefix =
+
