@@ -13,11 +13,11 @@ if __name__ == "__main__":
     datai = s.recv(1024)
     data_arr = pickle.loads(datai)
     s.close()
-    #print 'Received', data_arr
+
     datamass = {}
     datahmass = []
     for i in data_arr:
-        #print i, data_arr
+
         datah = {}
         datah["{#NAME}"] = i
         datah["{#ADDRESS}"] = data_arr[i][1]
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     datamass["data"] = datahmass
 
-    print datamass
+
 
     print json.dumps(datamass, sort_keys=True,   indent=4, separators=(',', ': '))
 
