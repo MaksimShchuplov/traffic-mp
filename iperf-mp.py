@@ -22,14 +22,10 @@ class CmdCommands(threading.Thread):
 
     def run(self):
         if self.parameters["wait_extra"] > self.parameters["wait_time"]:
-            # print("waiting " + str(self.parameters["wait_extra"]))
             time.sleep(self.parameters["wait_extra"])
-
-            # return  wait_extra parameter to default wait_time
             self.parameters["wait_extra"] = self.parameters["wait_time"]
         else:
             if self.parameters["wait_time"] > 0:
-                # print("waiting " + str(self.parameters["wait_time"]))
                 time.sleep(self.parameters["wait_time"])
 
 
